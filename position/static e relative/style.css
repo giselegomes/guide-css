@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+.example {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*  Position static é o position padrão do elemento.
+    Se tentarmos mover um dos elementos, usando top: 20px por exemplo, nada acontece.
+*/
+
+/*
+    Position relative pega a posição em que o elemento foi criado, e a partir dela, move para o lado que foi indicado.
+    Esse movimento pode ser indicado com: top, rigth, bottom e left
+    Abaixo, usei position relative + top: 200px, para fazer o elemento firts ficar e cima do elemento second 
+*/
+
+.example-first {
+    background-color: blueviolet;
+    position: relative;
+    top: 200px;
+}
+
+.example-second {
+    background-color: indianred;
+}
