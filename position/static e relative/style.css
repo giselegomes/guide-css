@@ -32,6 +32,12 @@ body {
     Abaixo, usei position relative + top: 200px, para fazer o elemento firts ficar e cima do elemento second 
 */
 
+/*
+    Position absolute utiliza como referência a tela toda.
+    Para respeitar o elemento pai, o position do pai precisa diferente de static 
+    Abaixo usei: left: 50% + absolut pega o tamanho do browser e calcula 50% dela
+*/
+
 .example-first {
     background-color: blueviolet;
     position: relative;
@@ -40,4 +46,17 @@ body {
 
 .example-second {
     background-color: indianred;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* pega 50% do elemento */
+    /* elemento sempre fica centralizado */
+    /* translate x e y */
+    transform: translate(-50%, -50%);
+}
+
+.example-third {
+    background-color: aquamarine;
+    position: absolute;
+    right: 0;
 }
